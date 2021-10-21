@@ -24,5 +24,13 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        echo 'Deploy'
+        sh 'echo "Second step"'
+        sleep 1
+      }
+    }
+
   }
 }
